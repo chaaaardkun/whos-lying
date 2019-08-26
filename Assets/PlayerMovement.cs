@@ -44,10 +44,6 @@ public class PlayerMovement : MonoBehaviour
             //Debug.Log("Yo whadup");
             //child = parent.transform.Find("Text");
             //child.gameObject.SetActive(true);
-            if(Input.GetKeyUp("q"))
-            {
-
-            }
             
         }
     }
