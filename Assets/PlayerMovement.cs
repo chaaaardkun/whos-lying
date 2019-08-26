@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -7,13 +8,28 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
 
     public Rigidbody2D rb;
-    public Canvas c;
+    public GameObject parent;
+    public Transform child;
+    public Transform inventory;
     Vector2 movement;
 
+    private void Start()
+    {
+        inventory = parent.transform.Find("Inventory");
+    }
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKeyUp("e"))
+        {
+            if(inventory.gameObject.activeSelf == false)
+            inventory.gameObject.SetActive(true);
+            else
+            inventory.gameObject.SetActive(false);
+        }
+     
     }
 
     void FixedUpdate()
@@ -25,7 +41,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.tag == "NPC")
         {
-            c.rootCanvas.enabled = true;
+            //Debug.Log("Yo whadup");
+            //child = parent.transform.Find("Text");
+            //child.gameObject.SetActive(true);
+            if(Input.GetKeyUp("q"))
+            {
+
+            }
+            
         }
     }
 
@@ -33,7 +56,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.tag == "NPC")
         {
-            c.rootCanvas.enabled = false;
+           // child = parent.transform.Find("Text");
+           // child.gameObject.SetActive(false);
         }
     }
 }
