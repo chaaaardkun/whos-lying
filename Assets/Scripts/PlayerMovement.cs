@@ -12,22 +12,34 @@ public class PlayerMovement : MonoBehaviour
     public Transform child;
     public Transform inventory;
     Vector2 movement;
+    public GameObject dialogbox;
 
     private void Start()
     {
         inventory = parent.transform.Find("Inventory");
+            if (Input.GetKeyUp("f"))
+        {        
+            print("Hello");
+        }
     }
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
+    
         if (Input.GetKeyUp("e"))
         {
             if(inventory.gameObject.activeSelf == false)
             inventory.gameObject.SetActive(true);
             else
             inventory.gameObject.SetActive(false);
+        }
+        if(dialogbox.activeSelf == false)
+        {
+            speed = 5f;
+        }
+        else{
+            speed = 0f;
         }
      
     }

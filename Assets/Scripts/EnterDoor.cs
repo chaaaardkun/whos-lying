@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnterDoor : MonoBehaviour
 {
@@ -8,6 +9,6 @@ public class EnterDoor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Application.LoadLevel(level);
+        SceneManager.LoadScene(level);
     }
 }
