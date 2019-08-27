@@ -1014,6 +1014,11 @@ PrefabInstance:
       propertyPath: inventory
       value: 
       objectReference: {fileID: 873613983}
+    - target: {fileID: 1649213956158881009, guid: 096a8dd46ac313f45946aac9e90525d7,
+        type: 3}
+      propertyPath: dialogbox
+      value: 
+      objectReference: {fileID: 1453342610}
     - target: {fileID: 1649213955766807398, guid: 096a8dd46ac313f45946aac9e90525d7,
         type: 3}
       propertyPath: dialogbox

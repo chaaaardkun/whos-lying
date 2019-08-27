@@ -21,4 +21,9 @@ bool triggerStay = false;
     {   
         triggerStay = true;
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        triggerStay = false;
+    }
 }
