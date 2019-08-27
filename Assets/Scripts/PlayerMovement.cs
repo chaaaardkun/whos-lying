@@ -17,10 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         inventory = parent.transform.Find("Inventory");
-            if (Input.GetKeyUp("f"))
-        {        
-            print("Hello");
-        }
     }
     void Update()
     {
@@ -41,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         else{
             speed = 0f;
         }
+        
      
     }
 
