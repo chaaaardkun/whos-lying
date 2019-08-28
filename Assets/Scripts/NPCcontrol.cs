@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class NPCcontrol : MonoBehaviour
 {
-     public NPC n;
+    public NPC n;
     public GameObject dialogbox;
+    private bool firstSpace = true;
+    private bool triggerStay = false;
+    //public static bool talked;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && triggerStay)
+        if (Input.GetKeyDown("space") && triggerStay)
         {
-            dialogbox.SetActive(true);
-            n.TriggerDialogue();
+            if (firstSpace) {
+                firstSpace = false;
+
+                dialogbox.SetActive(true);
+                n.TriggerDialogue();
+            }
+            else {
+                //call button next
+            }
+        }
+        if (!dialogbox.activeSelf) {
+            firstSpace = true;
         }
     }
 
-bool triggerStay = false;
     private void OnTriggerStay2D(Collider2D collision)
     {   
         triggerStay = true;

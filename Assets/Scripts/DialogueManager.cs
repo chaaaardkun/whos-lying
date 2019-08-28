@@ -8,6 +8,8 @@ public class DialogueManager : MonoBehaviour
     public Text nametxt;
     public Text dialogtxt;
     public GameObject dialogbox;
+    public string lastDialogue;
+    public bool interact;
 
     private Queue<string> sentences;
 
@@ -21,10 +23,17 @@ public class DialogueManager : MonoBehaviour
         nametxt.text = dialogue.name;
 
         sentences.Clear();
-
         foreach(string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            if(NPC.talked == true){
+                sentences.Enqueue(lastDialogue);
+                break;
+            }
+            else{
+                lastDialogue = sentence;
+                sentences.Enqueue(sentence);
+                //print(lastDialogue);
+            }
         }
 
         DisplayNextSentence();
@@ -32,10 +41,15 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+
         if(sentences.Count == 0)
         {
             EndDialogue();
             return;
+        }
+        if(sentences.Count == 1){
+            //n.firstInteract == false;
+            NPC.talked = true;
         }
 
         string s = sentences.Dequeue();
