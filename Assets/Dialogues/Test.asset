@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6168af1d996287b469af41bccdabb84b, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: 
-  dialogueInfo: []
+  dialogueInfo:
+  - myName: lolo mo
+    portrait: {fileID: 21300000, guid: 932f69f1d6e50d54588824f61744509f, type: 3}
+    myText: omae wa mou shindeiru
+  - myName: ika
+    portrait: {fileID: 21300000, guid: 0c26f7fe6ceabce41a5a6352823ca62e, type: 3}
+    myText: nani
+  - myName: ika
+    portrait: {fileID: 21300000, guid: 0c26f7fe6ceabce41a5a6352823ca62e, type: 3}
+    myText: '*ded*'

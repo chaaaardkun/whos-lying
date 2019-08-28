@@ -11,7 +11,7 @@ public class DialogueBase : ScriptableObject
         public string myName;
         public Sprite portrait;
         [TextArea(4, 8)]
-        public string text;
+        public string myText;
     }
     [Header("Dialogue Information")]
     public Info[] dialogueInfo;
