@@ -1094,6 +1094,26 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1649213955766807416, guid: 096a8dd46ac313f45946aac9e90525d7,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.000002861023
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649213955766807416, guid: 096a8dd46ac313f45946aac9e90525d7,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 11.096809
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649213955766807416, guid: 096a8dd46ac313f45946aac9e90525d7,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.08613396
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649213955766807416, guid: 096a8dd46ac313f45946aac9e90525d7,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 15.638117
+      objectReference: {fileID: 0}
     - target: {fileID: 1649213956158881023, guid: 096a8dd46ac313f45946aac9e90525d7,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1113,6 +1133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649213955766807417, guid: 096a8dd46ac313f45946aac9e90525d7,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 096a8dd46ac313f45946aac9e90525d7, type: 3}
@@ -1201,7 +1226,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0000019073486}
