@@ -22,7 +22,6 @@ public class DialogueManagerNew : MonoBehaviour
 
     public Text dialogueName;
     public Text dialogueText;
-    public Image dialoguePortrait;
     public float delay = 0.001f;
 
     public Queue<DialogueBase.Info> dialogueInfo = new Queue<DialogueBase.Info>();
@@ -52,8 +51,8 @@ public class DialogueManagerNew : MonoBehaviour
 
         dialogueName.text = info.myName;
         dialogueText.text = info.myText;
-        dialoguePortrait.sprite = info.portrait;
 
+        StopAllCoroutines();
         StartCoroutine(TypeText(info));
     }
 

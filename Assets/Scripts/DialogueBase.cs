@@ -9,7 +9,6 @@ public class DialogueBase : ScriptableObject
     public class Info
     {
         public string myName;
-        public Sprite portrait;
         [TextArea(4, 8)]
         public string myText;
     }

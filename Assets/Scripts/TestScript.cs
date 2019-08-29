@@ -5,12 +5,13 @@ using UnityEngine;
 public class TestScript : MonoBehaviour
 {
     public DialogueBase dialogue;
+    public static bool talked;
 
     public void TriggerDialogue()
     {
         DialogueManagerNew.instance.EnqueueDialogue(dialogue);
     }
-
+        
     public void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
