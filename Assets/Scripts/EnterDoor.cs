@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EnterDoor : MonoBehaviour
 {
-    public string level;
+    public Transform player;
+    public float x,y;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(level);
+        player.transform.position = new Vector2(x,y);
     }
 }
