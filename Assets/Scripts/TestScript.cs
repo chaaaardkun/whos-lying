@@ -5,10 +5,12 @@ using UnityEngine;
 public class TestScript : MonoBehaviour
 {
     public DialogueBase dialogue;
-    public static bool talked;
+    public bool talked;
+    public bool alive = true;
     private bool firstSpace = true;
     private bool triggerStay = false;
     public GameObject dialogueBox;
+    
 
     public void TriggerDialogue()
     {

@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform inventory;
     Vector2 movement;
     public GameObject dialogbox;
+    public GameObject gamemanager;
+    public GameObject dialoguemanager;
 
     private void Start()
     {
@@ -50,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.tag == "NPC")
         {
+            dialoguemanager.GetComponent<DialogueManagerNew>().npc = collision.gameObject;
             //Debug.Log("Yo whadup");
             //child = parent.transform.Find("Text");
             //child.gameObject.SetActive(true);

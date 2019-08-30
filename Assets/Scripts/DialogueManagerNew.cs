@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DialogueManagerNew : MonoBehaviour
 {
     public static DialogueManagerNew instance;
+    public GameObject g;
     //public DialogueBase.Info[] lastDialogue;
 
     
@@ -26,10 +27,19 @@ public class DialogueManagerNew : MonoBehaviour
     public Text dialogueName;
     public Text dialogueText;
     public float delay = 0.001f;
-    private int i = 1;
     private int prevDialogueCount;
+    public GameObject npc;
+    public bool istalked;
+    public bool isalive;
 
-    
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "NPC")
+        {
+            npc = collision.gameObject;
+        }
+    }
+
 
     public Queue<DialogueBase.Info> dialogueInfo = new Queue<DialogueBase.Info>();
     
@@ -40,10 +50,10 @@ public class DialogueManagerNew : MonoBehaviour
 
         foreach(DialogueBase.Info info in db.dialogueInfo)
         {
-            if(TestScript.talked == true){
+            if(npc.GetComponent<TestScript>().talked == true){
                 dialogueInfo.Enqueue(info); 
                 if(dialogueInfo.Count == prevDialogueCount){
-                    print(dialogueInfo.Count);
+                    //print(dialogueInfo.Count);
                     //deletes other dialogue except the last line.
                     while(dialogueInfo.Count != 0){
                         dialogueInfo.Dequeue();
@@ -68,8 +78,17 @@ public class DialogueManagerNew : MonoBehaviour
             return;
         }
         if(dialogueInfo.Count == 1){
+            if(npc.GetComponent<TestScript>().talked == false)
+            {
+                g.GetComponent<GameManager>().count += 1;
+            }
+            istalked = true;
+            npc.GetComponent<TestScript>().talked = istalked;
             //n.firstInteract == false;
-            TestScript.talked = true;
+            //TestScript.talked = true;
+            
+            float i = g.GetComponent<GameManager>().count;
+            Debug.Log("pira na nakaulay kang player? = " + i);
         }
 
 
@@ -98,4 +117,6 @@ public class DialogueManagerNew : MonoBehaviour
     {
         dialogueBox.SetActive(false);
     }
+
+    
 }
