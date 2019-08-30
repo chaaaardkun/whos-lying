@@ -15,3 +15,4 @@ public class DialogueBase : ScriptableObject
     [Header("Dialogue Information")]
     public Info[] dialogueInfo;
 }
+
