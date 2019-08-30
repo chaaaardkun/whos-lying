@@ -53,19 +53,19 @@ public class PlayerMovement : MonoBehaviour
         if(collision.tag == "NPC")
         {
             dialoguemanager.GetComponent<DialogueManagerNew>().npc = collision.gameObject;
-            //Debug.Log("Yo whadup");
-            //child = parent.transform.Find("Text");
-            //child.gameObject.SetActive(true);
             
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        gamemanager.GetComponent<GameManager>().stay = true;
+    }
+
+   
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.tag == "NPC")
-        {
-           // child = parent.transform.Find("Text");
-           // child.gameObject.SetActive(false);
-        }
+        gamemanager.GetComponent<GameManager>().stay = false;
     }
 }

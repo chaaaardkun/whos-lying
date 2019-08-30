@@ -7,7 +7,6 @@ public class DialogueManagerNew : MonoBehaviour
 {
     public static DialogueManagerNew instance;
     public GameObject g;
-    //public DialogueBase.Info[] lastDialogue;
 
     
     private void Awake()
@@ -53,7 +52,6 @@ public class DialogueManagerNew : MonoBehaviour
             if(npc.GetComponent<TestScript>().talked == true){
                 dialogueInfo.Enqueue(info); 
                 if(dialogueInfo.Count == prevDialogueCount){
-                    //print(dialogueInfo.Count);
                     //deletes other dialogue except the last line.
                     while(dialogueInfo.Count != 0){
                         dialogueInfo.Dequeue();
@@ -84,8 +82,6 @@ public class DialogueManagerNew : MonoBehaviour
             }
             istalked = true;
             npc.GetComponent<TestScript>().talked = istalked;
-            //n.firstInteract == false;
-            //TestScript.talked = true;
             
             float i = g.GetComponent<GameManager>().count;
             Debug.Log("pira na nakaulay kang player? = " + i);
