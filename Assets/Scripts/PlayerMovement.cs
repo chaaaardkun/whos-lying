@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
 
+    public Animator anim;
+
     public Rigidbody2D rb;
     public GameObject parent;
     public Transform child;
@@ -24,7 +26,11 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-    
+
+        anim.SetFloat("Horizontal", movement.x);
+        anim.SetFloat("Vertical", movement.y);
+        anim.SetFloat("Speed", movement.sqrMagnitude);
+
         if (Input.GetKeyUp("e"))
         {
             if(inventory.gameObject.activeSelf == false)
