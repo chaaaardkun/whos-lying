@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject dialoguemanager;
     public GameObject npc;
+    public GameObject player;
+    public GameObject gameover;
     public bool stay = false;
     public float count = 0;
     public float killcount = 0;
@@ -16,13 +19,17 @@ public class GameManager : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Z) && stay)
             {
-                KillPlayer();
+                KillNPC();
             }
             
         }
+        if(killcount >= 3)
+        {
+            KillPlayer();
+        }
     }
 
-    public void KillPlayer()
+    public void KillNPC()
     {
         
         npc = dialoguemanager.GetComponent<DialogueManagerNew>().npc;
@@ -32,5 +39,12 @@ public class GameManager : MonoBehaviour
         }
         npc.GetComponent<TestScript>().alive = false;
         Debug.Log(npc.name + " is ded" + " number of ded = " + killcount);
+    }
+
+    public void KillPlayer()
+    {
+        player.GetComponent<PlayerMovement>().speed = 0;
+        player.GetComponent<PlayerMovement>().anim.enabled = false;
+        gameover.SetActive(true);
     }
 }
