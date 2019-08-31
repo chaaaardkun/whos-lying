@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6168af1d996287b469af41bccdabb84b, type: 3}
+  m_Name: Hodaka_Dialogue1
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Hodaka
+    myText: Where am i?
+  - myName: Hodaka
+    myText: "Ugh, it feels like I bumped my head or something\u2026 "
+  - myName: Hodaka
+    myText: "Is there anyone in here? \r\n"
+  - myName: Hodaka
+    myText: "I can\u2019t remember anything\u2026 Help. \r\n"
+  - myName: Hodaka
+    myText: "Aw, my head really hurts. \r\n"
+  - myName: Hodaka
+    myText: "This looks like an abandoned hospital in the rural area of the Unknown.
+      \r\nMy phone? I need to make a call. \r\nNo signal? What is this place? \r\nGuess
+      this will still be useful for lights. There seems to be no electricity in this
+      area too.\r\n"
+  - myName: <unknown>.
+    myText: '*Screech*'
+  - myName: Hodaka
+    myText: huh? What was that?
+  - myName: ???
+    myText: "There is only one thing to get out of here\u2026.. "
+  - myName: ???
+    myText: You need to know who I am.
+  - myName: Hodaka
+    myText: Ehh? Who are you? Where am I? What am I doing here?
+  - myName: Hodaka
+    myText: Hello? Can you hear me?
+  - myName: Hodaka
+    myText: Who was that? I guess i need to find a way out of here

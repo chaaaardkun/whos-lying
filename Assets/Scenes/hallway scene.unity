@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2421c5eccaadf418da70d2e99a68df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: cdf05e40a68ad9c4993b17b6b3efacca, type: 2}
+  dialogue: {fileID: 11400000, guid: ed675dee7a8206a40988ad380d84b84f, type: 2}
   talked: 0
   alive: 1
   dialogueBox: {fileID: 1453342610}

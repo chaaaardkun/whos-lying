@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6168af1d996287b469af41bccdabb84b, type: 3}
+  m_Name: Hina_Dialogue1
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Hodaka
+    myText: Hey! Hey you!
+  - myName: Girl
+    myText: '...'
+  - myName: Hodaka
+    myText: Do you know what happened here? Do you know a way out?
+  - myName: Girl
+    myText: Is.. is that you?
+  - myName: Girl
+    myText: I don't remember what happened. I can't seem to find my way out.
+  - myName: Girl
+    myText: The next thing I know someone dropped me in this room.
+  - myName: Hodaka
+    myText: Why do you have an axe?
+  - myName: Girl
+    myText: I.. I don't know.
+  - myName: Girl
+    myText: 'I''ve been looking for help but no one seems to hear me. '
+  - myName: Girl
+    myText: I heard a loud noise and freaked out.
+  - myName: Hodaka
+    myText: (This is too suspicious..)
+  - myName: Hodaka
+    myText: "It feels like I\u2019ve met you before\u2026."
+  - myName: Hodaka
+    myText: "But I can\u2019t really remember anything"
+  - myName: Hina
+    myText: "I\u2019m Hina. I am your\u2026\u2026 "
+  - myName: Hodaka
+    myText: "Let\u2019s talk about that later. I\u2019m gonna look around the building
+      to find this nonsense\u2026 Come and follow me..\r\n"
+  - myName: Hina
+    myText: "I\u2019m too scared to get out yet. I think it\u2019s safer here. Come
+      back when you find the way out."
