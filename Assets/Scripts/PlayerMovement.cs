@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "NPC")
+        if(collision.tag == "NPC" || collision.tag == "DialogueTrigger")
         {
             dialoguemanager.GetComponent<DialogueManagerNew>().npc = collision.gameObject;
             

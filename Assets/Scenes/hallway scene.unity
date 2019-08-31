@@ -177,6 +177,95 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.751799, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &5304172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5304175}
+  - component: {fileID: 5304174}
+  - component: {fileID: 5304173}
+  - component: {fileID: 5304176}
+  m_Layer: 0
+  m_Name: Hodaka_Dialogue2Trigger
+  m_TagString: DialogueTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &5304173
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304172}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.5293674, y: 0.80766296}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.058735, y: 2.615326}
+  m_EdgeRadius: 0
+--- !u!114 &5304174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2421c5eccaadf418da70d2e99a68df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 3e4cd2575ae205948a45eec78363146e, type: 2}
+  talked: 0
+  alive: 1
+  dialogueBox: {fileID: 1453342610}
+--- !u!4 &5304175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304172}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 32.35, y: 444.03, z: -167.33203}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 880212537}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5304176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82114e060463d6a4986efe5a90cef141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  g: {fileID: 5304172}
+  prevnpc: {fileID: 131483729}
 --- !u!1 &6323747
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +952,95 @@ Transform:
   - {fileID: 160174823}
   m_Father: {fileID: 1834206747}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &122262464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 122262468}
+  - component: {fileID: 122262467}
+  - component: {fileID: 122262466}
+  - component: {fileID: 122262465}
+  m_Layer: 0
+  m_Name: Hodaka_Dialogue3Trigger
+  m_TagString: DialogueTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &122262465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122262464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82114e060463d6a4986efe5a90cef141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  g: {fileID: 122262464}
+  prevnpc: {fileID: 1487668348}
+--- !u!114 &122262466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122262464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2421c5eccaadf418da70d2e99a68df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 40b1ca0c43d83664e9612462e033ab77, type: 2}
+  talked: 0
+  alive: 1
+  dialogueBox: {fileID: 1453342610}
+--- !u!61 &122262467
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122262464}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.37444735, y: -0.94330597}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.954873, y: 2.886612}
+  m_EdgeRadius: 0
+--- !u!4 &122262468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122262464}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 21.6, y: 195.17, z: -117.36328}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 880212537}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &131483729
 GameObject:
@@ -1837,6 +2015,95 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.835465, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &471089436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471089440}
+  - component: {fileID: 471089439}
+  - component: {fileID: 471089438}
+  - component: {fileID: 471089437}
+  m_Layer: 0
+  m_Name: Hodaka_Dialogue4Trigger
+  m_TagString: DialogueTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &471089437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471089436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82114e060463d6a4986efe5a90cef141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  g: {fileID: 471089436}
+  prevnpc: {fileID: 1540061500}
+--- !u!114 &471089438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471089436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2421c5eccaadf418da70d2e99a68df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: fe1765b0689ced0459d07c26672a67ef, type: 2}
+  talked: 0
+  alive: 1
+  dialogueBox: {fileID: 1453342610}
+--- !u!61 &471089439
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471089436}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.49563074, y: 0.4901657}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9252748, y: 1.9803314}
+  m_EdgeRadius: 0
+--- !u!4 &471089440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471089436}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.48, y: 187, z: -389.9922}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 880212537}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &491598637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,6 +2520,95 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.351315, y: 1.1089513}
   m_EdgeRadius: 0
+--- !u!1 &553101596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 553101599}
+  - component: {fileID: 553101598}
+  - component: {fileID: 553101597}
+  - component: {fileID: 553101600}
+  m_Layer: 0
+  m_Name: Hodaka_Dialogue1Trigger
+  m_TagString: DialogueTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &553101597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553101596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2421c5eccaadf418da70d2e99a68df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 5dd76312ac02ed445ab9818b08182be6, type: 2}
+  talked: 0
+  alive: 1
+  dialogueBox: {fileID: 1453342610}
+--- !u!61 &553101598
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553101596}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.01902771, y: 0.3093872}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.561737, y: 3.4273682}
+  m_EdgeRadius: 0
+--- !u!4 &553101599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553101596}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -60.05, y: 537.98, z: -3.046875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 880212537}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &553101600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553101596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82114e060463d6a4986efe5a90cef141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  g: {fileID: 553101596}
+  prevnpc: {fileID: 798837900}
 --- !u!1 &597843500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,6 +3670,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 26.507341, y: 3.737465}
   m_EdgeRadius: 0
+--- !u!1 &880212536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 880212537}
+  m_Layer: 0
+  m_Name: DialogueTriggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &880212537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880212536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 553101599}
+  - {fileID: 5304175}
+  - {fileID: 122262468}
+  - {fileID: 471089440}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &900355616
 GameObject:
   m_ObjectHideFlags: 0
@@ -4978,7 +5368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2421c5eccaadf418da70d2e99a68df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: be43c7abfe123704695f500c7ea16896, type: 2}
+  dialogue: {fileID: 11400000, guid: d5ee50e392619f34ca8a68b92449d351, type: 2}
   talked: 0
   alive: 1
   dialogueBox: {fileID: 1453342610}
@@ -5208,7 +5598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2421c5eccaadf418da70d2e99a68df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 100103721e3bb8c4cb65d74ae2d7375c, type: 2}
+  dialogue: {fileID: 11400000, guid: b0e38b53a957d31479df7f50bad1bcc1, type: 2}
   talked: 0
   alive: 1
   dialogueBox: {fileID: 1453342610}
@@ -7668,6 +8058,11 @@ PrefabInstance:
       propertyPath: dialoguemanager
       value: 
       objectReference: {fileID: 933996726}
+    - target: {fileID: 7931192218071767692, guid: 46761dfba73141848ba424f626ef4f9b,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7931192218071767695, guid: 46761dfba73141848ba424f626ef4f9b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

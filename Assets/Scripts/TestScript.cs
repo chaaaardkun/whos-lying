@@ -37,7 +37,7 @@ public class TestScript : MonoBehaviour
     }
 
     private void OnTriggerStay2D(Collider2D collision)
-    {   
+    {
         triggerStay = true;
     }
 

@@ -31,13 +31,13 @@ public class DialogueManagerNew : MonoBehaviour
     public bool istalked;
     public bool isalive;
 
-    public void OnTriggerEnter2D(Collider2D collision)
+   /* public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "NPC")
+        if (collision.tag == "NPC" || collision.tag == "DialogueTrigger")
         {
             npc = collision.gameObject;
         }
-    }
+    }*/
 
 
     public Queue<DialogueBase.Info> dialogueInfo = new Queue<DialogueBase.Info>();
@@ -49,7 +49,7 @@ public class DialogueManagerNew : MonoBehaviour
 
         foreach(DialogueBase.Info info in db.dialogueInfo)
         {
-            if(npc.GetComponent<TestScript>().talked == true){
+            if(npc.GetComponent<TestScript>().talked == true && npc.tag == "NPC"){
                 dialogueInfo.Enqueue(info); 
                 if(dialogueInfo.Count == prevDialogueCount){
                     //deletes other dialogue except the last line.
@@ -76,7 +76,7 @@ public class DialogueManagerNew : MonoBehaviour
             return;
         }
         if(dialogueInfo.Count == 1){
-            if(npc.GetComponent<TestScript>().talked == false)
+            if(npc.GetComponent<TestScript>().talked == false && npc.tag == "NPC")
             {
                 g.GetComponent<GameManager>().count += 1;
             }

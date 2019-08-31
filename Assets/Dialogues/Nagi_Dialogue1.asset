@@ -19,27 +19,33 @@ MonoBehaviour:
     myText: "Thank god you\u2019re alive! It\u2019s me Nagi. "
   - myName: Hodaka
     myText: "Nagi? I\u2019m not sure if I know you but\u2026"
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
-  - myName: 
-    myText: 
+  - myName: Nagi
+    myText: What? Its me!
+  - myName: Hodaka
+    myText: "Anyway, that\u2019s not important for now. Do you know what happened
+      here?"
+  - myName: Nagi
+    myText: "I\u2019m not really sure. I heard girl and a very loud noise. Looks like
+      something just fell in the floor.\r  I woke up somewhere in the reception room.
+      All the doors are locked. I am trying to look for the key.\r\nThis place has
+      no electricity. It\u2019s really hard to look around.\r\n\n"
+  - myName: Hodaka
+    myText: 'Good thing i have a phone. '
+  - myName: Nagi
+    myText: "Then why don\u2019t you call the cops? Or ask for help? \r\n"
+  - myName: Hodaka
+    myText: "That\u2019s the problem.. This place seems to have no coverage area.
+      I\u2019m using it as a light."
+  - myName: Nagi
+    myText: " I\u2019ve used the candle that i have so i\u2019m trying to look blindly.\r\n"
+  - myName: Hodaka
+    myText: "*soft voice* What is that knife for?\r\n"
+  - myName: Nagi
+    myText: "You said something? \r\n"
+  - myName: Hodaka
+    myText: "Nothing. Come with me, let\u2019s look for some other people in this
+      area. We might find someone who can help us. "
+  - myName: Nagi
+    myText: "There is a locked exit door in the reception room. \r\n"
+  - myName: Nagi
+    myText: " I\u2019ll look for the key here. Come back when you found other people.\r\n"
