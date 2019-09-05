@@ -7,14 +7,14 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/new scene.unity
-    guid: d2c356207686add4086f095ebca71b7a
+    path: Assets/Scenes/Main Menu.unity
+    guid: 1a58b8cd04cb54c469b12b42fd2c22cd
   - enabled: 1
     path: Assets/Scenes/hallway scene.unity
     guid: 643a614beafcc984f8686b7a1716d319
   - enabled: 1
-    path: Assets/Scenes/MenuScene.unity
-    guid: 004ba7a8f4ca29b418a5708543168485
+    path: Assets/Scenes/new scene.unity
+    guid: d2c356207686add4086f095ebca71b7a
   m_configObjects: {}
